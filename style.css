@@ -1,0 +1,174 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#bg-credit>a, #bg-credit>a:visited {
+  color: white;
+}
+
+@font-face {
+  font-family: norse-bold;
+  src: url(./assets/Norse-Bold.otf);
+  ascent-override: 100%;
+}
+
+
+#sign-up-container {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+}
+
+#bg-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 35vw;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vh;
+  color: white
+}
+
+#logo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 64px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 50vh;
+  margin-bottom: auto;
+}
+
+#logo-img {
+  width: 64px;
+}
+
+#logo-text {
+  font-family: norse-bold, sans-serif;
+  font-size: 72px;
+  line-height: 1x;
+}
+
+#bg-credit {
+  font-size: 12px;
+  align-self: center;
+  padding: 8px;
+}
+
+#marketing-content {
+  background-color: #eeeded;
+  padding: 128px 164px 32px 32px;
+}
+
+.marketing-text {
+  font-size: 28px;  
+  font-weight: 700;
+}
+
+#sign-up-elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 32px 164px 32px 32px;
+  box-shadow: 4px 4px 8px #c4c4c4;
+}
+
+legend.marketing-text {
+  width: 100%;
+  float: left;
+}
+
+.form-item-group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  width: 250px;
+}
+
+.form-item-group label{
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+input {
+  height: 24px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus, input:active {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 2px 2px 6px #c4c4c4;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+#create-account-container {
+  padding: 32px 164px 32px 32px;
+}
+
+#sign-up-btn {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 4px 4px 8px #c4c4c4;
+  background-color: #596D48;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 16px 48px;
+  margin-bottom: 32px;
+}
+
+#acct a, acct a:visited {
+  color: #596D48; 
+  text-decoration: none;
+}
