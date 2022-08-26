@@ -28,9 +28,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -47,29 +45,28 @@ table {
 	border-spacing: 0;
 }
 
-#bg-credit>a, #bg-credit>a:visited {
-  color: white;
-}
-
 @font-face {
   font-family: norse-bold;
   src: url(./assets/Norse-Bold.otf);
   ascent-override: 100%;
 }
 
-
 #sign-up-container {
   display: flex;
   font-family: 'Roboto', sans-serif;
+  height: 100%;
 }
 
 #bg-container {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+  background-color: red;
   min-width: 35vw;
   background-image: url("./assets/bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100vh;
+  background-position: center;
+  background-size: cover;
   color: white
 }
 
@@ -97,6 +94,10 @@ table {
   font-size: 12px;
   align-self: center;
   padding: 8px;
+}
+
+#bg-credit>a, #bg-credit>a:visited {
+  color: white;
 }
 
 #marketing-content {
